@@ -71,15 +71,55 @@
 		84ACED1320B1B99B004173AE /* RealmExample */ = {
 			isa = PBXGroup;
 			children = (
-				84ACED1420B1B99B004173AE /* AppDelegate.swift */,
-				84ACED1620B1B99B004173AE /* ViewController.swift */,
-				84ACED1820B1B99B004173AE /* Main.storyboard */,
-				84ACED1B20B1B99D004173AE /* Assets.xcassets */,
-				84ACED1D20B1B99D004173AE /* LaunchScreen.storyboard */,
-				84ACED2020B1B99D004173AE /* Info.plist */,
-				84F358D720B1BCDC00D691BA /* Pocket.swift */,
+				84F54ADA20B20C2800F237E8 /* AppDelegate */,
+				84F54AD920B20C1900F237E8 /* Controller */,
+				84F54AD720B20BFB00F237E8 /* Model */,
+				84F54ADB20B20C3600F237E8 /* Resources */,
+				84F54AD820B20C0700F237E8 /* Views */,
 			);
 			path = RealmExample;
+			sourceTree = "<group>";
+		};
+		84F54AD720B20BFB00F237E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F358D720B1BCDC00D691BA /* Pocket.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F54AD820B20C0700F237E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84ACED1820B1B99B004173AE /* Main.storyboard */,
+				84ACED1D20B1B99D004173AE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84F54AD920B20C1900F237E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84ACED1620B1B99B004173AE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F54ADA20B20C2800F237E8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84ACED1420B1B99B004173AE /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		84F54ADB20B20C3600F237E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84ACED1B20B1B99D004173AE /* Assets.xcassets */,
+				84ACED2020B1B99D004173AE /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D3D241F30C9B97471529005A /* Pods */ = {
@@ -354,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W99LM37N9;
-				INFOPLIST_FILE = RealmExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RealmExample/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W99LM37N9;
-				INFOPLIST_FILE = RealmExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RealmExample/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

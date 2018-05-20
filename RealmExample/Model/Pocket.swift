@@ -10,31 +10,35 @@ import Foundation
 import RealmSwift
 
 class Pocket: Object {
-    enum Money {
-        case hasMoney (MoneyValue)
-        case noMoney (MoneyValue)
+    enum Money: Int {
+        enum HasMoney {
+            case hasMoney (MoneyValue)
+        }
+        case noMoney = 0
     }
     
-    var money: Money? {
+    var money: Money.HasMoney? {
         get {
             if let hasMoney = hasMoney {
                 return .hasMoney(hasMoney)
-            } else if let noMoney = noMoney {
-                return .noMoney(noMoney)
             } else {
                 return nil
             }
         } set {
             switch newValue {
             case let .hasMoney(value)?: hasMoney = value
-            case let .noMoney(value)?: noMoney = value
             default: break
             }
         }
     }
     
-    @objc dynamic var hasMoney: MoneyValue?
-    @objc dynamic var noMoney: MoneyValue?
+    @objc private (set) dynamic var hasMoney: MoneyValue?
+    @objc private dynamic var noMoneyValue = Money.noMoney.rawValue
+    
+    var noMoney: Money {
+        get { return Money(rawValue: noMoneyValue)! }
+        set { noMoneyValue = newValue.rawValue }
+    }
 }
 
 class MoneyValue: Object {

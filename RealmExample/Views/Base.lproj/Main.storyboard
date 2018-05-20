@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yMA-Pg-78n">
-                                <rect key="frame" x="16" y="78" width="343" height="311"/>
+                                <rect key="frame" x="16" y="108" width="343" height="251"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hasMoney" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDG-Rk-00o">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -27,33 +27,27 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="noMoney" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TtM-Zv-jtX">
-                                        <rect key="frame" x="0.0" y="60" width="343" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zx6-pz-r2C">
-                                        <rect key="frame" x="0.0" y="120" width="343" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="money: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zx6-pz-r2C">
+                                        <rect key="frame" x="0.0" y="60" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-3l-DPZ">
-                                        <rect key="frame" x="0.0" y="170.5" width="343" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="noMoney:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-3l-DPZ">
+                                        <rect key="frame" x="0.0" y="110.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyP-VP-ecL">
-                                        <rect key="frame" x="0.0" y="221" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="161" width="343" height="30"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAj-bQ-2Nv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EO-Y6-LN6">
-                                        <rect key="frame" x="0.0" y="281" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="221" width="343" height="30"/>
                                         <state key="normal" title="Load"/>
                                         <connections>
                                             <action selector="load:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2w1-P3-jQv"/>
@@ -75,7 +69,6 @@
                         <outlet property="hasMonLbl" destination="zx6-pz-r2C" id="ga6-2q-pAo"/>
                         <outlet property="hasMoneyTxt" destination="hDG-Rk-00o" id="d84-B5-6lE"/>
                         <outlet property="noMonLbl" destination="Q3H-3l-DPZ" id="ibr-gp-0XJ"/>
-                        <outlet property="noMoneyTxt" destination="TtM-Zv-jtX" id="F9w-5F-Zhz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
